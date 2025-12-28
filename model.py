@@ -12,7 +12,7 @@ CLASSES = [
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = None
 model_info = {}
-def load_model(model_path=f"DL_Final_Project/best_resnet50_model.pth"):
+def load_model(model_path=f"best_resnet50_model.pth"):
     global model, model_info
 
     checkpoint = torch.load(model_path, map_location=device)
