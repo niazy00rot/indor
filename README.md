@@ -1,72 +1,25 @@
-Indoor Scene Classification
+# 🏠 Indoor Scene Classification
 
-Overview
-Deep learning-based indoor scene classification using PyTorch and ResNet50 on the Indoor CVPR 2019 dataset (67 categories).
+## Overview
+Deep learning model for classifying indoor scenes using PyTorch and ResNet50.  
+Trained on the **Indoor CVPR 2019** dataset (67 scene categories).
 
+## Quick Start
+1. **Upload** `kaggle.json` when prompted
+2. **Run all cells** in sequence
+3. **Model trains automatically** with GPU support
 
+## Features
+- **67 indoor scene categories** (bedroom, kitchen, subway, bookstore, etc.)
+- **ResNet50** with transfer learning
+- **Data augmentation** and visualization tools
+- **Training metrics** tracking (loss/accuracy)
+- **Evaluation**: confusion matrix & classification report
 
-Quick Start
-Upload kaggle.json when prompted
+## Requirements
+- Python 3.7+
+- PyTorch & torchvision
+- Kaggle API key (`kaggle.json`)
+- GPU recommended (T4/P100)
 
-Run all cells in order
-
-Model trains automatically with GPU acceleration
-
-
-
-Features
-67 indoor scene categories (bedroom, kitchen, subway, etc.)
-
-ResNet50 with transfer learning
-
-Data augmentation & visualization
-
-Training/validation metrics
-
-Confusion matrix & evaluation
-
-
-
-
-Requirements
-Python 3.7+
-
-PyTorch, torchvision
-
-Kaggle API (for dataset download)
-
-GPU recommended
-
-
-
-
-Files
-Indoor_Scene_Classification.ipynb - Main notebook
-
-kaggle.json - Kaggle credentials (upload manually)
-
-Dataset auto-downloads to indoor_scenes/
-
-
-
-Training
-Epochs: 25
-
-Batch size: 32
-
-Optimizer: Adam (lr=0.001)
-
-Loss: CrossEntropyLoss
-
-
-
-Results
-Real-time accuracy tracking
-
-Per-class performance metrics
-
-Visualization of predictions
-
-
-
-Note: Requires Kaggle account and GPU for optimal performance.
+## Project Structure
